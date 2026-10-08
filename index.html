@@ -185,7 +185,7 @@ footer{background:var(--deep3);color:#b8cdd8;padding:64px 0 0;font-size:14.5px}
       <h1>Plumbing Done Right, <em>Priced Upfront</em></h1>
       <p class="dek">AccuServe Plumbing &amp; Drain serves Eastvale, Corona and the Inland Empire with honest flat rates, free estimates and same day service, from leak detection to whole house repipes.</p>
       <div class="hero-cta">
-        <a class="btn" href="tel:+19512585030">Call or Text Now</a>
+        <a class="btn" href="tel:+19512585030"><span class="btn-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></span>Call or Text Now</a>
         <a class="btn ghost" href="https://plumbingincorona.com/contact.html" target="_blank" rel="noopener">Send Us a Message</a>
       </div>
       <ul class="chips">
@@ -311,7 +311,7 @@ footer{background:var(--deep3);color:#b8cdd8;padding:64px 0 0;font-size:14.5px}
       <h2 class="reveal">Need a Plumber <em>Today?</em></h2>
       <p class="reveal">Fast, friendly, fairly priced. Call or text 951-258-5030 for a free estimate, or send us a message online and we will respond quickly.</p>
       <div class="hero-cta reveal" style="justify-content:center">
-        <a class="btn" href="tel:+19512585030">Call or Text Now</a>
+        <a class="btn" href="tel:+19512585030"><span class="btn-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></span>Call or Text Now</a>
         <a class="btn alt" href="https://plumbingincorona.com/contact.html" target="_blank" rel="noopener">Send Us a Message</a>
       </div>
       <p class="note reveal">AccuServe, Inc. &middot; C-36 Licensed Plumbing Contractor #996814 &middot; Since 1997</p>
@@ -373,5 +373,28 @@ t.addEventListener('click',function(){var o=n.classList.toggle('open');t.setAttr
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
 document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
 </script>
+
+<style>
+/* v2 tasteful enhancements — same v1 design language, uiverse-inspired micro-interactions */
+@keyframes heroUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.hero-inner>*{animation:heroUp .8s cubic-bezier(.2,.7,.3,1) both}
+.hero-inner>*:nth-child(2){animation-delay:.08s}
+.hero-inner>*:nth-child(3){animation-delay:.16s}
+.hero-inner>*:nth-child(4){animation-delay:.24s}
+.hero-inner>*:nth-child(5){animation-delay:.32s}
+.btn .btn-ic{display:inline-flex;transition:transform .3s cubic-bezier(.2,.7,.3,1.4)}
+.btn:hover .btn-ic{transform:translateX(4px) rotate(-10deg)}
+.card{position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
+.card:hover::before{transform:scaleX(1)}
+.mcall{display:none}
+@media(max-width:899px){
+.mcall{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:70;background:rgba(7,30,46,.97);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,.12);padding:10px 16px calc(10px + env(safe-area-inset-bottom))}
+.mcall .btn{flex:1;padding:13px 10px;font-size:17px}
+body{padding-bottom:78px}
+}
+@media (prefers-reduced-motion:reduce){.hero-inner>*{animation:none}}
+</style>
+<div class="mcall"><a class="btn" href="tel:+19512585030">Call 951-258-5030</a></div>
 </body>
 </html>
