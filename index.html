@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eastvale Corona Plumber | Drain, Water Heaters & Repipes — AccuServe Plumbing v2</title>
+<meta name="description" content="AccuServe Plumbing & Drain serves Eastvale, Corona and the Inland Empire with honest flat rates, free estimates and same day service since 1997.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0a1628; --navy2:#1b233d; --ink:#0f172a;
+  --cyan:#22d3ee; --cyan2:#50f6ff; --blue:#2563eb; --royal:royalblue;
+  --paper:#f8fafc; --mut:#64748b; --line:rgba(148,163,184,.25);
+  --grad:linear-gradient(45deg,#049fbb 0%,#50f6ff 100%);
+  --r:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);overflow-x:hidden}
+h1,h2,h3{font-family:'Sora',sans-serif;line-height:1.15}
+img{max-width:100%}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:96px 0;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:16px}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--cyan);display:inline-block}
+.sec-title{font-size:clamp(30px,4vw,46px);font-weight:800;margin-bottom:14px}
+.sec-title em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sec-sub{color:var(--mut);font-size:17px;max-width:640px;margin-bottom:48px}
+
+/* ============ PRELOADER (uiverse: Book Loader by Nawsome) ============ */
+#preloader{position:fixed;inset:0;background:var(--navy);z-index:9999;display:flex;flex-direction:column;gap:26px;align-items:center;justify-content:center;transition:opacity .6s,visibility .6s}
+#preloader.done{opacity:0;visibility:hidden}
+#preloader p{color:#8fa3c8;font-size:13px;letter-spacing:2px}
+.uloader{--background:linear-gradient(135deg,#23C4F8,#275EFE);--shadow:rgba(39,94,254,.28);--text:#8fa3c8;--page:rgba(255,255,255,.36);--page-fold:rgba(255,255,255,.52);--duration:3s;width:200px;height:140px;position:relative}
+.uloader:before,.uloader:after{--r:-6deg;content:"";position:absolute;bottom:8px;width:120px;top:80%;box-shadow:0 16px 12px var(--shadow);transform:rotate(var(--r))}
+.uloader:before{left:4px}.uloader:after{--r:6deg;right:4px}
+.uloader div{width:100%;height:100%;border-radius:13px;position:relative;z-index:1;perspective:600px;box-shadow:0 4px 6px var(--shadow);background-image:var(--background)}
+.uloader div ul{margin:0;padding:0;list-style:none;position:relative}
+.uloader div ul li{--r:180deg;--o:0;--c:var(--page);position:absolute;top:10px;left:10px;transform-origin:100% 50%;color:var(--c);opacity:var(--o);transform:rotateY(var(--r));animation:var(--duration) ease infinite}
+.uloader div ul li:nth-child(2){--c:var(--page-fold);animation-name:upage2}
+.uloader div ul li:nth-child(3){--c:var(--page-fold);animation-name:upage3}
+.uloader div ul li:nth-child(4){--c:var(--page-fold);animation-name:upage4}
+.uloader div ul li:nth-child(5){--c:var(--page-fold);animation-name:upage5}
+.uloader div ul li svg{width:90px;height:120px;display:block}
+.uloader div ul li:first-child{--r:0deg;--o:1}
+.uloader div ul li:last-child{--o:1}
+@keyframes upage2{0%{transform:rotateY(180deg);opacity:0}20%{opacity:1}35%,100%{opacity:0}50%,100%{transform:rotateY(0deg)}}
+@keyframes upage3{15%{transform:rotateY(180deg);opacity:0}35%{opacity:1}50%,100%{opacity:0}65%,100%{transform:rotateY(0deg)}}
+@keyframes upage4{30%{transform:rotateY(180deg);opacity:0}50%{opacity:1}65%,100%{opacity:0}80%,100%{transform:rotateY(0deg)}}
+@keyframes upage5{45%{transform:rotateY(180deg);opacity:0}65%{opacity:1}80%,100%{opacity:0}95%,100%{transform:rotateY(0deg)}}
+
+/* ============ NAV ============ */
+nav{position:fixed;top:0;left:0;right:0;z-index:900;transition:.35s;padding:18px 0}
+nav.scrolled{background:rgba(10,22,40,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:12px 0;border-bottom:1px solid rgba(148,163,184,.15)}
+.nav-in{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;font-family:'Sora';font-weight:800;font-size:19px}
+.brand .drop{width:38px;height:38px;border-radius:12px;background:var(--grad);display:grid;place-items:center;box-shadow:0 6px 20px rgba(34,211,238,.4)}
+.brand .drop svg{width:22px;height:22px;fill:#04263b}
+.nav-links{display:flex;gap:30px;color:#cbd5e1;font-size:14.5px;font-weight:500}
+.nav-links a{position:relative;transition:.25s}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--cyan);transition:.3s;border-radius:2px}
+.nav-links a:hover{color:#fff}.nav-links a:hover::after{width:100%}
+@media(max-width:860px){.nav-links{display:none}}
+
+/* uiverse: Send Button by adamgiebl (scoped) */
+.usend{font-family:inherit;font-size:16px;background:var(--royal);color:#fff;padding:.7em 1.1em .7em .9em;display:inline-flex;align-items:center;border:none;border-radius:16px;overflow:hidden;transition:all .2s;cursor:pointer;font-weight:600;box-shadow:0 10px 26px rgba(65,105,225,.45)}
+.usend span{display:block;margin-left:.35em;transition:all .3s ease-in-out;white-space:nowrap}
+.usend svg{display:block;transform-origin:center center;transition:transform .3s ease-in-out}
+.usend:hover .usend-wrap{animation:ufly .6s ease-in-out infinite alternate}
+.usend:hover svg{transform:translateX(1.2em) rotate(45deg) scale(1.1)}
+.usend:hover span{transform:translateX(5em)}
+.usend:active{transform:scale(.95)}
+@keyframes ufly{from{transform:translateY(.1em)}to{transform:translateY(-.1em)}}
+
+/* uiverse: Rolling-Label Button by mobinkakei (scoped) */
+.uroll{min-width:170px;height:54px;background:linear-gradient(to top,#00154c,#12376e,#23487f);color:#fff;border-radius:50px;border:1px solid rgba(120,180,255,.35);outline:none;cursor:pointer;position:relative;box-shadow:0 15px 30px rgba(0,0,0,.45);overflow:hidden;display:inline-block;font-family:'Sora';font-weight:600}
+.uroll span{font-size:13px;text-transform:uppercase;letter-spacing:1.5px;transition:top .5s;white-space:nowrap}
+.uroll .t1{position:absolute;width:100%;top:50%;left:0;transform:translateY(-50%)}
+.uroll .t2{position:absolute;width:100%;top:150%;left:0;transform:translateY(-50%);color:var(--cyan2)}
+.uroll:hover .t1{top:-100%}
+.uroll:hover .t2{top:50%}
+
+/* ============ HERO ============ */
+.hero{min-height:100svh;display:flex;align-items:center;background:radial-gradient(1100px 600px at 85% 10%,#12305e 0%,var(--navy) 55%) ,var(--navy);color:#fff;overflow:hidden;padding:150px 0 90px}
+.hero .blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;animation:drift 14s ease-in-out infinite alternate}
+.blob.b1{width:480px;height:480px;background:#0ea5e9;top:-120px;right:-80px}
+.blob.b2{width:380px;height:380px;background:#1d4ed8;bottom:-140px;left:-100px;animation-delay:-6s}
+@keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(-60px,50px) scale(1.15)}}
+.waves{position:absolute;bottom:-2px;left:0;width:100%;height:120px;overflow:hidden}
+.waves svg{width:200%;height:100%;animation:wave 9s linear infinite}
+@keyframes wave{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;position:relative;z-index:2}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(38px,5.4vw,64px);font-weight:800;margin:18px 0 20px}
+.hero h1 .grad{background:linear-gradient(90deg,#7dd3fc,#22d3ee,#a5f3fc);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{color:#aebdd6;font-size:18px;line-height:1.7;max-width:520px;margin-bottom:28px}
+.hero-bullets{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:36px}
+.hb{display:inline-flex;align-items:center;gap:9px;background:rgba(148,184,255,.08);border:1px solid rgba(148,184,255,.22);padding:10px 16px;border-radius:50px;font-size:14px;font-weight:500;color:#dbe7ff;backdrop-filter:blur(6px);transition:.3s}
+.hb:hover{background:rgba(34,211,238,.14);transform:translateY(-2px)}
+.hb svg{width:16px;height:16px;fill:#22d3ee;flex:none}
+.hero-ctas{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+.hero-proof{margin-top:34px;display:flex;gap:26px;flex-wrap:wrap;color:#8fa3c8;font-size:13.5px}
+.hero-proof b{color:#fff;display:block;font-size:16px;font-family:'Sora'}
+/* hero visual: floating badge card */
+.hero-visual{position:relative;display:flex;justify-content:center}
+.hydro-card{background:rgba(255,255,255,.06);border:1px solid rgba(148,184,255,.25);border-radius:24px;padding:34px 30px;backdrop-filter:blur(12px);max-width:380px;box-shadow:0 30px 80px rgba(0,0,0,.4);animation:floaty 6s ease-in-out infinite}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.hydro-card .big{font-family:'Sora';font-size:52px;font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hydro-card p{color:#aebdd6;font-size:14.5px;line-height:1.65;margin-top:10px}
+.hydro-card .row{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.hydro-tag{font-size:12px;font-weight:600;letter-spacing:1px;background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.35);color:#a5f3fc;padding:7px 13px;border-radius:50px}
+
+/* ============ MARQUEE TRUST ============ */
+.trust{background:var(--navy2);border-top:1px solid rgba(148,163,184,.15);border-bottom:1px solid rgba(148,163,184,.15);padding:22px 0;overflow:hidden}
+.marquee{display:flex;gap:56px;width:max-content;animation:mscroll 26s linear infinite}
+.marquee span{display:flex;align-items:center;gap:10px;color:#c7d5ef;font-family:'Sora';font-weight:600;font-size:15px;white-space:nowrap}
+.marquee svg{width:18px;height:18px;fill:var(--cyan)}
+@keyframes mscroll{to{transform:translateX(-50%)}}
+
+/* ============ SERVICE CARDS (uiverse: Slide-Header Card by satyamchaudharydev) ============ */
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:26px}
+.ucard{--primary-clr:#1C204B;--dot-clr:#BBC0FF;--play:hsl(195,74%,62%);border-radius:14px;font-family:'Inter';color:#fff;display:grid;cursor:pointer;grid-template-rows:64px 1fr;transition:transform .35s cubic-bezier(.2,.7,.3,1.2),box-shadow .35s;position:relative}
+.ucard:hover{transform:translateY(-10px);box-shadow:0 24px 50px rgba(4,159,187,.28)}
+.ucard:hover .uimg{transform:translateY(1em)}
+.uimg{transition:.25s cubic-bezier(.25,.46,.45,.94);border-top-left-radius:14px;border-top-right-radius:14px;background:var(--grad);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.uimg svg{width:44px;height:44px;fill:#04344a}
+.ucard-desc{border-radius:14px;padding:20px;position:relative;top:-12px;display:grid;gap:8px;background:var(--primary-clr);border:1px solid rgba(148,163,184,.18)}
+.ucard-title{font-family:'Sora';font-size:16.5px;font-weight:700}
+.ucard-text{font-size:13.8px;line-height:1.65;color:#a9b6d3}
+.ucard-link{font-size:13px;font-weight:600;color:var(--cyan2);letter-spacing:.5px;display:inline-flex;align-items:center;gap:6px;margin-top:4px}
+.ucard-link::after{content:"→";transition:.25s}
+.ucard:hover .ucard-link::after{transform:translateX(5px)}
+
+/* ============ FEATURED 3D CARD (uiverse: 3D Mouse-Tracking Card by kennyotsu) ============ */
+.featured{background:linear-gradient(180deg,#0a1628,#0d1f3c);color:#fff;overflow:hidden}
+.feat-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+@media(max-width:900px){.feat-grid{grid-template-columns:1fr}}
+.tilt-zone{display:flex;justify-content:center}
+.u3d{position:relative;width:320px;height:420px;transition:200ms}
+.u3d .canvas{perspective:900px;position:absolute;inset:0;display:grid;grid-template-columns:repeat(5,1fr);grid-template-rows:repeat(5,1fr)}
+.u3d .tracker{position:absolute;z-index:200;width:100%;height:100%}
+.u3d .tracker:hover{cursor:pointer}
+#ucard3d{position:absolute;inset:0;z-index:0;display:flex;flex-direction:column;justify-content:center;align-items:center;border-radius:22px;transition:700ms;background:linear-gradient(135deg,#0ea5e9 0%,#1d4ed8 55%,#0a1628 130%);padding:36px 30px;text-align:center;box-shadow:0 30px 70px rgba(14,165,233,.35)}
+#ucard3d::before{content:'';background:linear-gradient(135deg,#0ea5e9,#1d4ed8);filter:blur(2.4rem);opacity:35%;width:100%;height:100%;position:absolute;z-index:-1;transition:200ms;border-radius:22px}
+.u3d:hover #ucard3d::before{opacity:75%}
+.u3d .tracker:hover~#ucard3d{transition:300ms;filter:brightness(1.12)}
+#ucard3d .kick{font-size:12px;letter-spacing:3px;font-weight:700;color:#bae6fd;margin-bottom:14px}
+#ucard3d h3{font-size:30px;font-weight:800;margin-bottom:14px}
+#ucard3d p{color:#dbeafe;font-size:15px;line-height:1.7}
+#ucard3d .price{font-family:'Sora';font-size:44px;font-weight:800;color:#fff;margin:16px 0 4px}
+#ucard3d .price small{font-size:15px;font-weight:600;color:#bae6fd}
+/* tilt transforms */
+.u3d .tr1:hover~#ucard3d{transform:rotateX(14deg) rotateY(-10deg)}
+.u3d .tr2:hover~#ucard3d{transform:rotateX(14deg) rotateY(-5deg)}
+.u3d .tr3:hover~#ucard3d{transform:rotateX(14deg) rotateY(0deg)}
+.u3d .tr4:hover~#ucard3d{transform:rotateX(14deg) rotateY(5deg)}
+.u3d .tr5:hover~#ucard3d{transform:rotateX(14deg) rotateY(10deg)}
+.u3d .tr6:hover~#ucard3d{transform:rotateX(7deg) rotateY(-10deg)}
+.u3d .tr7:hover~#ucard3d{transform:rotateX(7deg) rotateY(-5deg)}
+.u3d .tr8:hover~#ucard3d{transform:rotateX(7deg) rotateY(0deg)}
+.u3d .tr9:hover~#ucard3d{transform:rotateX(7deg) rotateY(5deg)}
+.u3d .tr10:hover~#ucard3d{transform:rotateX(7deg) rotateY(10deg)}
+.u3d .tr11:hover~#ucard3d{transform:rotateX(0deg) rotateY(-10deg)}
+.u3d .tr12:hover~#ucard3d{transform:rotateX(0deg) rotateY(-5deg)}
+.u3d .tr13:hover~#ucard3d{transform:rotateX(0deg) rotateY(0deg)}
+.u3d .tr14:hover~#ucard3d{transform:rotateX(0deg) rotateY(5deg)}
+.u3d .tr15:hover~#ucard3d{transform:rotateX(0deg) rotateY(10deg)}
+.u3d .tr16:hover~#ucard3d{transform:rotateX(-7deg) rotateY(-10deg)}
+.u3d .tr17:hover~#ucard3d{transform:rotateX(-7deg) rotateY(-5deg)}
+.u3d .tr18:hover~#ucard3d{transform:rotateX(-7deg) rotateY(0deg)}
+.u3d .tr19:hover~#ucard3d{transform:rotateX(-7deg) rotateY(5deg)}
+.u3d .tr20:hover~#ucard3d{transform:rotateX(-7deg) rotateY(10deg)}
+.u3d .tr21:hover~#ucard3d{transform:rotateX(-14deg) rotateY(-10deg)}
+.u3d .tr22:hover~#ucard3d{transform:rotateX(-14deg) rotateY(-5deg)}
+.u3d .tr23:hover~#ucard3d{transform:rotateX(-14deg) rotateY(0deg)}
+.u3d .tr24:hover~#ucard3d{transform:rotateX(-14deg) rotateY(10deg)}
+.u3d .tr25:hover~#ucard3d{transform:rotateX(-14deg) rotateY(10deg)}
+.feat-copy .check{display:flex;gap:14px;margin-bottom:20px;align-items:flex-start}
+.feat-copy .check svg{width:22px;height:22px;fill:var(--cyan);flex:none;margin-top:2px}
+.feat-copy .check div b{display:block;font-family:'Sora';margin-bottom:4px}
+.feat-copy .check div span{color:#aebdd6;font-size:14.5px;line-height:1.6}
+
+/* ============ STEPS ============ */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;counter-reset:step}
+@media(max-width:860px){.steps{grid-template-columns:1fr}}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:36px 30px;position:relative;transition:.35s;overflow:hidden}
+.step::before{content:"0" counter(step);counter-increment:step;position:absolute;top:18px;right:24px;font-family:'Sora';font-weight:800;font-size:54px;color:#e8eef7;line-height:1}
+.step:hover{transform:translateY(-8px);box-shadow:0 26px 60px rgba(15,23,42,.12);border-color:rgba(34,211,238,.5)}
+.step h3{font-size:20px;margin:14px 0 10px}
+.step p{color:var(--mut);font-size:14.8px;line-height:1.7}
+.step .n{width:46px;height:46px;border-radius:14px;background:var(--grad);display:grid;place-items:center;font-family:'Sora';font-weight:800;color:#04344a;font-size:19px}
+
+/* ============ WHY ============ */
+.why{background:#fff}
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+@media(max-width:860px){.why-grid{grid-template-columns:1fr}}
+.why-card{display:flex;gap:20px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:30px;transition:.35s;position:relative;overflow:hidden}
+.why-card::after{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--grad);transform:scaleY(0);transition:.35s;transform-origin:top}
+.why-card:hover{transform:translateX(6px);box-shadow:0 20px 44px rgba(15,23,42,.1)}
+.why-card:hover::after{transform:scaleY(1)}
+.why-card .ic{width:54px;height:54px;flex:none;border-radius:16px;background:linear-gradient(135deg,#dbeafe,#e0f2fe);display:grid;place-items:center}
+.why-card .ic svg{width:26px;height:26px;fill:var(--blue)}
+.why-card h3{font-size:18px;margin-bottom:8px}
+.why-card p{color:var(--mut);font-size:14.6px;line-height:1.7}
+
+/* ============ FAQ ============ */
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:14px;overflow:hidden;transition:.3s}
+.faq-item.open{border-color:rgba(34,211,238,.55);box-shadow:0 14px 34px rgba(15,23,42,.08)}
+.faq-q{width:100%;background:none;border:none;text-align:left;padding:22px 24px;font-family:'Sora';font-weight:700;font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer;color:var(--ink)}
+.faq-q .pm{width:30px;height:30px;flex:none;border-radius:50%;background:var(--grad);display:grid;place-items:center;font-size:18px;color:#04344a;font-weight:800;transition:.35s}
+.faq-item.open .pm{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.2,.7,.3,1)}
+.faq-a p{padding:0 24px 24px;color:var(--mut);font-size:15px;line-height:1.75}
+
+/* ============ AREAS ============ */
+.areas{background:var(--navy);color:#fff}
+.city-cloud{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.city{padding:12px 22px;border-radius:50px;border:1px solid rgba(148,184,255,.3);color:#dbe7ff;font-size:14.5px;font-weight:500;transition:.3s;cursor:default}
+.city:hover{background:var(--grad);color:#04344a;border-color:transparent;transform:translateY(-3px);font-weight:700}
+
+/* ============ FINAL CTA (uiverse: Neon Glow Button by TaniaDou) ============ */
+.final{background:radial-gradient(800px 400px at 50% 0%,#14294d,var(--navy));color:#fff;text-align:center}
+.uglow{padding:1.1rem 2.6rem;border-radius:.7rem;border:none;font-size:1.05rem;font-weight:700;color:#f4f0ff;text-align:center;position:relative;cursor:pointer;font-family:'Sora';display:inline-block;margin-top:30px}
+.uglow::before{content:"";display:block;position:absolute;left:0;top:0;height:100%;width:100%;border-radius:.7rem;background:linear-gradient(180deg,rgba(8,77,126,0) 0%,rgba(8,77,126,.42) 100%),rgba(47,255,255,.24);box-shadow:inset 0 0 12px rgba(151,200,255,.44);z-index:-1}
+.uglow::after{content:"";display:block;position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,rgba(8,77,126,0) 0%,rgba(8,77,126,.42) 100%),rgba(47,255,255,.24);box-shadow:inset 0 0 12px rgba(151,200,255,.44);border-radius:.7rem;opacity:0;z-index:-1;transition:all .3s ease-in}
+.uglow:hover::after{opacity:1}
+.uglow .ub{position:absolute;top:0;left:0;height:100%;width:100%;border-radius:.7rem;z-index:-1}
+.uglow .ub::before{content:"";position:absolute;border-radius:.7rem;padding:1px;inset:0;background:linear-gradient(180deg,rgba(184,238,255,.24) 0%,rgba(184,238,255,0) 100%),linear-gradient(0deg,rgba(184,238,255,.32),rgba(184,238,255,.32));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.final h2{font-size:clamp(32px,4.6vw,52px);font-weight:800}
+.final p{color:#aebdd6;margin-top:14px;font-size:17px}
+
+/* ============ CONTACT / FOOTER ============ */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr}}
+.c-card{background:var(--navy2);color:#fff;border-radius:var(--r);padding:40px;position:relative;overflow:hidden;transition:.35s}
+.c-card:hover{transform:translateY(-6px);box-shadow:0 26px 60px rgba(10,22,40,.35)}
+.c-card h3{font-size:22px;margin-bottom:12px}
+.c-card p{color:#aebdd6;font-size:14.8px;line-height:1.7;margin-bottom:22px}
+footer{background:#060d1a;color:#7d90b5;padding:44px 0;font-size:13.5px}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.sticky-call{position:fixed;bottom:22px;right:22px;z-index:800;display:none}
+@media(max-width:860px){.sticky-call{display:block}}
+.sticky-call a{display:flex;align-items:center;gap:10px;background:var(--grad);color:#04344a;font-family:'Sora';font-weight:800;padding:15px 22px;border-radius:50px;box-shadow:0 14px 34px rgba(34,211,238,.45);font-size:15px}
+
+/* reveal on scroll */
+.rv{opacity:0;transform:translateY(36px);transition:opacity .8s cubic-bezier(.2,.7,.3,1),transform .8s cubic-bezier(.2,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+</style>
+</head>
+<body>
+
+<div id="preloader"><div class="uloader"><div><ul><li><svg fill="currentColor" viewBox="0 0 90 120"><path d="M90,0 L90,120 L11,120 C4.9,120 0,115.1 0,109 L0,11 C0,4.9 4.9,0 11,0 L90,0 Z"/></svg></li><li><svg fill="currentColor" viewBox="0 0 90 120"><path d="M90,0 L90,120 L11,120 C4.9,120 0,115.1 0,109 L0,11 C0,4.9 4.9,0 11,0 L90,0 Z"/></svg></li><li><svg fill="currentColor" viewBox="0 0 90 120"><path d="M90,0 L90,120 L11,120 C4.9,120 0,115.1 0,109 L0,11 C0,4.9 4.9,0 11,0 L90,0 Z"/></svg></li><li><svg fill="currentColor" viewBox="0 0 90 120"><path d="M90,0 L90,120 L11,120 C4.9,120 0,115.1 0,109 L0,11 C0,4.9 4.9,0 11,0 L90,0 Z"/></svg></li><li><svg fill="currentColor" viewBox="0 0 90 120"><path d="M90,0 L90,120 L11,120 C4.9,120 0,115.1 0,109 L0,11 C0,4.9 4.9,0 11,0 L90,0 Z"/></svg></li><li><svg fill="currentColor" viewBox="0 0 90 120"><path d="M90,0 L90,120 L11,120 C4.9,120 0,115.1 0,109 L0,11 C0,4.9 4.9,0 11,0 L90,0 Z"/></svg></li></ul></div></div><p>ACCUSERVE PLUMBING</p></div>
+
+<nav id="nav"><div class="wrap nav-in">
+  <a class="brand" href="#top"><span class="drop"><svg viewBox="0 0 24 24"><path d="M12 2C12 2 5 10 5 15a7 7 0 0 0 14 0C19 10 12 2 12 2zm0 12a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg></span>AccuServe</a>
+  <div class="nav-links"><a href="#services">Services</a><a href="#how">How It Works</a><a href="#why">Why Us</a><a href="#faq">FAQ</a><a href="#areas">Areas</a></div>
+  <a class="usend" href="tel:+19512585030" style="font-size:14px"><span class="usend-wrap" style="display:flex;align-items:center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"/></svg></span><span>951-258-5030</span></a>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow" style="color:#7dd3fc">Family owned since 1997 · C-36 License #996814</span>
+      <h1>Plumbing Done Right, <span class="grad">Priced Upfront.</span></h1>
+      <p class="lead">AccuServe Plumbing &amp; Drain serves Eastvale, Corona and the Inland Empire with honest flat rates, free estimates and same day service — from leak detection to whole house repipes.</p>
+      <div class="hero-bullets">
+        <span class="hb"><svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Free Slab Leak Detection With Repair</span>
+        <span class="hb"><svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Free Estimates</span>
+        <span class="hb"><svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>7 Days a Week Service</span>
+      </div>
+      <div class="hero-ctas">
+        <a class="usend" href="tel:+19512585030"><span class="usend-wrap" style="display:flex;align-items:center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"><path fill="none" d="M0 0h24v24H0z"/><path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"/></svg></span><span>Call or Text 951-258-5030</span></a>
+        <a class="uroll" href="#contact"><span class="t1">Free Estimate</span><span class="t2">Get Yours →</span></a>
+      </div>
+      <div class="hero-proof">
+        <div><b>C-36 #996814</b>Licensed &amp; Insured</div>
+        <div><b>Same Day</b>7 days a week</div>
+        <div><b>Flat Rates</b>No surprises</div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hydro-card">
+        <div class="big">25<span style="font-size:26px">yr</span></div>
+        <p>Warranty on whole-house repipes. New PEX or Type L copper, full patching &amp; texture — most jobs finished in a single day.</p>
+        <div class="row"><span class="hydro-tag">SLAB LEAK EXPERTS</span><span class="hydro-tag">FREE DETECTION*</span><span class="hydro-tag">SINCE 1997</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="waves"><svg viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0,60 C240,110 480,10 720,60 C960,110 1200,10 1440,60 C1680,110 1920,10 2160,60 C2400,110 2640,10 2880,60 L2880,120 L0,120 Z" fill="#1b233d"/><path d="M0,60 C240,110 480,10 720,60 C960,110 1200,10 1440,60 C1680,110 1920,10 2160,60 C2400,110 2640,10 2880,60 L2880,120 L0,120 Z" fill="#1b233d" transform="translate(1440,0)" opacity=".5"/></svg></div>
+</header>
+
+<div class="trust"><div class="marquee" id="marquee">
+  <span><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/></svg>Licensed C-36 Contractor #996814</span>
+  <span><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/></svg>Family Owned Since 1997</span>
+  <span><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/></svg>Same Day Service</span>
+  <span><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/></svg>Flat Upfront Pricing</span>
+  <span><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/></svg>Free Estimates</span>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <span class="eyebrow rv">What we fix</span>
+  <h2 class="sec-title rv">Full Service Plumbing <em>&amp; Drain Care</em></h2>
+  <p class="sec-sub rv">One call covers your whole home. Every service below is performed by our own trained plumbers, backed by up to a 25 year warranty on repipes.</p>
+  <div class="svc-grid">
+    <div class="ucard rv"><div class="uimg"><svg viewBox="0 0 24 24"><path d="M12 2C12 2 5 10 5 15a7 7 0 0 0 14 0C19 10 12 2 12 2zm0 12a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg></div><div class="ucard-desc"><div class="ucard-title">Electronic Leak Detection</div><div class="ucard-text">Advanced acoustic and electronic equipment pinpoints slab leaks, wall leaks and line failures without tearing up your home. Detection is free with repair.</div><a class="ucard-link" href="tel:+19512585030">Book detection</a></div></div>
+    <div class="ucard rv d1"><div class="uimg"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-9.9 9h3a7 7 0 0 1 13.8 0h3A10 10 0 0 0 12 2zm-7 14a7 7 0 0 0 14 0h-3a4 4 0 0 1-8 0H5z"/></svg></div><div class="ucard-desc"><div class="ucard-title">Drain Cleaning &amp; Hydro Jetting</div><div class="ucard-text">Stubborn clogs, grease lines and root intrusions cleared fast, with hydro jetting to scour pipes clean and keep them flowing.</div><a class="ucard-link" href="tel:+19512585030">Clear my drain</a></div></div>
+    <div class="ucard rv d2"><div class="uimg"><svg viewBox="0 0 24 24"><path d="M12 4C7 4 2.7 7.9 1 12c1.7 4.1 6 8 11 8s9.3-3.9 11-8c-1.7-4.1-6-8-11-8zm0 13a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-8a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg></div><div class="ucard-desc"><div class="ucard-title">Sewer Camera Inspection</div><div class="ucard-text">See exactly what is happening underground. Video inspection with line location finds breaks, bellies and blockages before you dig.</div><a class="ucard-link" href="tel:+19512585030">Inspect my line</a></div></div>
+    <div class="ucard rv d3"><div class="uimg"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg></div><div class="ucard-desc"><div class="ucard-title">Water Heater Installation</div><div class="ucard-text">30 to 100 gallon tank systems and high efficiency tankless units, sized to your home and installed same day in most cases.</div><a class="ucard-link" href="tel:+19512585030">Size my heater</a></div></div>
+    <div class="ucard rv"><div class="uimg"><svg viewBox="0 0 24 24"><path d="M4 4h16v3H4zm0 6h16v3H4zm0 6h16v3H4z" opacity=".9"/><path d="M2 2h20v20H2z" fill="none"/></svg></div><div class="ucard-desc"><div class="ucard-title">Whole House Repipes</div><div class="ucard-text">New PEX or Type L copper throughout your home with complete patching and texture, most jobs finished in one day and warranted up to 25 years.</div><a class="ucard-link" href="tel:+19512585030">Plan my repipe</a></div></div>
+    <div class="ucard rv d1"><div class="uimg"><svg viewBox="0 0 24 24"><path d="M12 22c4.4 0 8-3.6 8-8 0-4.5-4.5-9.5-8-12-3.5 2.5-8 7.5-8 12 0 4.4 3.6 8 8 8zm0-13.5c1.7 1.9 4 4.7 4 7a4 4 0 0 1-8 0c0-2.3 2.3-5.1 4-7z"/></svg></div><div class="ucard-desc"><div class="ucard-title">Gas Leak Detection &amp; Repair</div><div class="ucard-text">Suspect a gas leak? We locate and repair gas line problems safely and bring your system up to code.</div><a class="ucard-link" href="tel:+19512585030">Check my gas line</a></div></div>
+    <div class="ucard rv d2"><div class="uimg"><svg viewBox="0 0 24 24"><path d="M6 2v6L2 12l4 4v6h2v-6l6-4-6-4V2zm12 0a4 4 0 0 0-4 4v14h2V6a2 2 0 0 1 4 0v14h2V6a4 4 0 0 0-4-4z"/></svg></div><div class="ucard-desc"><div class="ucard-title">Pressure Regulators &amp; Filtration</div><div class="ucard-text">Protect your plumbing from hard water. Regulator installs, water softeners and whole home filtration for cleaner, safer water.</div><a class="ucard-link" href="tel:+19512585030">Soften my water</a></div></div>
+    <div class="ucard rv d3"><div class="uimg"><svg viewBox="0 0 24 24"><path d="M7 2v2H5v3h2v9a4 4 0 0 0 8 0V7h2V4h-2V2h-2v2h-4V2zm2 7h4v7a2 2 0 0 1-4 0z"/></svg></div><div class="ucard-desc"><div class="ucard-title">Faucets, Toilets &amp; Fixtures</div><div class="ucard-text">Kitchen and bath faucet installs, toilet repairs and replacements, garbage disposals and every small repair your home needs.</div><a class="ucard-link" href="tel:+19512585030">Fix my fixture</a></div></div>
+    <div class="ucard rv"><div class="uimg"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-10 10 10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2zm1 15h-2v-2h2zm0-4h-2V7h2z"/></svg></div><div class="ucard-desc"><div class="ucard-title">Emergency Plumbing</div><div class="ucard-text">Burst pipes, major leaks and backups cannot wait. Our emergency team runs 7 days a week for homes, property managers and HOAs.</div><a class="ucard-link" href="tel:+19512585030">Get help now</a></div></div>
+    <div class="ucard rv d1"><div class="uimg"><svg viewBox="0 0 24 24"><path d="M12 2s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11zm0 5.2C10.6 8.6 9 10.4 9 12.4a3 3 0 0 0 6 0c0-2-1.6-3.8-3-5.2z"/></svg></div><div class="ucard-desc"><div class="ucard-title">Tankless Flush Specialists</div><div class="ucard-text">Slow hot water from your tankless unit? Annual flushing keeps flow strong and protects your warranty. Call or text 951-258-5030.</div><a class="ucard-link" href="tel:+19512585030">Flush my tankless</a></div></div>
+  </div>
+</div></section>
+
+<section class="featured"><div class="wrap feat-grid">
+  <div class="tilt-zone rv"><div class="u3d">
+    <div class="canvas">
+      <div class="tracker tr1"></div><div class="tracker tr2"></div><div class="tracker tr3"></div><div class="tracker tr4"></div><div class="tracker tr5"></div>
+      <div class="tracker tr6"></div><div class="tracker tr7"></div><div class="tracker tr8"></div><div class="tracker tr9"></div><div class="tracker tr10"></div>
+      <div class="tracker tr11"></div><div class="tracker tr12"></div><div class="tracker tr13"></div><div class="tracker tr14"></div><div class="tracker tr15"></div>
+      <div class="tracker tr16"></div><div class="tracker tr17"></div><div class="tracker tr18"></div><div class="tracker tr19"></div><div class="tracker tr20"></div>
+      <div class="tracker tr21"></div><div class="tracker tr22"></div><div class="tracker tr23"></div><div class="tracker tr24"></div><div class="tracker tr25"></div>
+      <div id="ucard3d">
+        <div class="kick">LIMITED OFFER</div>
+        <h3>Free Slab Leak Detection</h3>
+        <p>with any repair we perform. Electronic pinpointing — we open only the exact spot.</p>
+        <div class="price">$0<small> with repair</small></div>
+      </div>
+    </div>
+  </div></div>
+  <div class="feat-copy">
+    <span class="eyebrow rv" style="color:#7dd3fc">Why it matters</span>
+    <h2 class="sec-title rv" style="color:#fff">Slab Leaks Are <em>Silent Destroyers</em></h2>
+    <p class="rv" style="color:#aebdd6;margin-bottom:30px;line-height:1.7">A pinhole leak under your slab can waste thousands of gallons and crack your foundation before you ever see water. Our electronic detection finds it fast — hover the card, then call us.</p>
+    <div class="check rv"><svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg><div><b>Electronic pinpointing</b><span>Acoustic sensors locate the leak within inches — no exploratory demolition.</span></div></div>
+    <div class="check rv d1"><svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg><div><b>Epoxy pipe coating</b><span>Trenchless repair options that seal lines from the inside with minimal disruption.</span></div></div>
+    <div class="check rv d2"><svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg><div><b>Insurance approved</b><span>We document everything and work directly with home warranty companies.</span></div></div>
+  </div>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <span class="eyebrow rv">Simple process</span>
+  <h2 class="sec-title rv">How It <em>Works</em></h2>
+  <p class="sec-sub rv">From first call to finished job, the process is simple, transparent and built around your schedule.</p>
+  <div class="steps">
+    <div class="step rv"><div class="n">1</div><h3>Call or Text</h3><p>Tell us what is happening. You get a free estimate and a scheduled arrival window that fits your day, 7 days a week.</p></div>
+    <div class="step rv d1"><div class="n">2</div><h3>Upfront Price, Then Work</h3><p>Our plumber diagnoses the problem, shows you exactly what is wrong, and gives you a flat price before any work begins. You approve it, then we get to work.</p></div>
+    <div class="step rv d2"><div class="n">3</div><h3>Clean Finish, Guaranteed</h3><p>We protect your floors, clean up when we are done, and back our repipes with up to a 25 year warranty. You pay the agreed price, nothing more.</p></div>
+  </div>
+  <p class="rv" style="margin-top:28px;color:var(--mut)">Our stocked trucks carry the parts to finish most jobs in one visit.</p>
+</div></section>
+
+<section class="why" id="why"><div class="wrap">
+  <span class="eyebrow rv">The difference</span>
+  <h2 class="sec-title rv">Why Homeowners <em>Call AccuServe</em></h2>
+  <p class="sec-sub rv">Since 1997 we have been the local answer for plumbing problems across the Inland Empire.</p>
+  <div class="why-grid">
+    <div class="why-card rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/></svg></div><div><h3>Licensed C-36 Contractor</h3><p>AccuServe, Inc. is a licensed, bonded and insured plumbing contractor, license #996814. We are insurance approved and handle home warranty repair work.</p></div></div>
+    <div class="why-card rv d1"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2C12 2 5 10 5 15a7 7 0 0 0 14 0C19 10 12 2 12 2z"/></svg></div><div><h3>Slab Leak Specialists</h3><p>Electronic leak detection and epoxy pipe coating technology mean we find leaks fast and repair them with minimal disruption.</p></div></div>
+    <div class="why-card rv d2"><div class="ic"><svg viewBox="0 0 24 24"><path d="M21 7H3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zm-9 7a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg></div><div><h3>Flat Rates &amp; Free Estimates</h3><p>Upfront pricing on every job, free estimates, and special financing with flexible terms on approved credit.</p></div></div>
+    <div class="why-card rv d3"><div class="ic"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg></div><div><h3>Stocked Trucks, Same Day Fixes</h3><p>Our trucks carry the parts for most repairs, water heaters and fixtures, so the job gets done in a single visit.</p></div></div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap" style="max-width:820px">
+  <span class="eyebrow rv">Straight answers</span>
+  <h2 class="sec-title rv">Common <em>Questions</em></h2>
+  <p class="sec-sub rv">Straight answers before you ever pick up the phone.</p>
+  <div class="faq-item rv"><button class="faq-q">Do you really offer free slab leak detection?<span class="pm">+</span></button><div class="faq-a"><p>Yes, slab leak detection is free with any repair we perform. We pinpoint the leak with electronic equipment and only open the exact spot that needs fixing.</p></div></div>
+  <div class="faq-item rv"><button class="faq-q">Which water heater size does my home need?<span class="pm">+</span></button><div class="faq-a"><p>We install 30, 40, 50, 75 and 100 gallon tank water heaters plus tankless systems. The right size depends on household size and peak hot water use, and we size it free during the estimate.</p></div></div>
+  <div class="faq-item rv"><button class="faq-q">Do you handle whole house repipes?<span class="pm">+</span></button><div class="faq-a"><p>Yes, whole house repipes are one of our specialties. We run new PEX or Type L copper lines and finish with full patching and texture, most jobs done in a single day.</p></div></div>
+  <div class="faq-item rv"><button class="faq-q">Are you licensed and insured?<span class="pm">+</span></button><div class="faq-a"><p>Yes, AccuServe, Inc. is a C-36 Licensed Plumbing Contractor, license #996814. We are bonded and carry plumbing liability insurance, and we are insurance approved and handle home warranty repair work.</p></div></div>
+  <div class="faq-item rv"><button class="faq-q">Do you give free estimates?<span class="pm">+</span></button><div class="faq-a"><p>Yes. Call or text 951-258-5030 and we will schedule a free in home plumbing estimate anywhere in our service area.</p></div></div>
+  <div class="faq-item rv"><button class="faq-q">What areas do you serve?<span class="pm">+</span></button><div class="faq-a"><p>We serve Corona, Eastvale, Norco, Chino, Chino Hills, Ontario, Jurupa Valley, Riverside, Montclair, Upland and the surrounding Inland Empire cities.</p></div></div>
+  <div class="faq-item rv"><button class="faq-q">Do you service tankless water heaters?<span class="pm">+</span></button><div class="faq-a"><p>Yes, we install and repair all major tankless brands and offer annual tankless flushes to keep water flowing strong and extend the life of the unit.</p></div></div>
+</div></section>
+
+<section class="areas" id="areas"><div class="wrap">
+  <span class="eyebrow rv" style="color:#7dd3fc">Service area</span>
+  <h2 class="sec-title rv" style="color:#fff">Proudly Serving <em>the Inland Empire</em></h2>
+  <p class="rv" style="color:#aebdd6;max-width:620px">Based in Eastvale, we run service trucks daily across these cities and the surrounding areas.</p>
+  <div class="city-cloud rv">
+    <span class="city">Eastvale</span><span class="city">Corona</span><span class="city">Norco</span><span class="city">Chino</span><span class="city">Chino Hills</span><span class="city">Ontario</span><span class="city">Jurupa Valley</span><span class="city">Riverside</span><span class="city">Montclair</span><span class="city">Upland</span><span class="city">Yorba Linda</span><span class="city">Anaheim Hills</span><span class="city">Rancho Cucamonga</span>
+  </div>
+  <p class="rv" style="color:#8fa3c8;margin-top:26px;font-size:14.5px">Not sure if we cover your street? Call or text 951-258-5030 and we will tell you right away.</p>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <h2 class="rv">Need a Plumber <span style="background:linear-gradient(90deg,#7dd3fc,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent">Today?</span></h2>
+  <p class="rv">Fast, friendly, fairly priced. Call or text 951-258-5030 for a free estimate,<br>or send us a message online and we will respond quickly.</p>
+  <a class="uglow rv" href="tel:+19512585030">Call 951-258-5030<span class="ub"></span></a>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <span class="eyebrow rv">Get in touch</span>
+  <h2 class="sec-title rv">Get In <em>Touch</em></h2>
+  <p class="sec-sub rv">The fastest way to reach us is a call or text. For non-urgent requests, use our online contact form.</p>
+  <div class="contact-grid">
+    <div class="c-card rv">
+      <h3>Call or Text — Fastest</h3>
+      <p>Emergencies, same-day bookings and quick questions. We answer 7 days a week across Eastvale, Corona and the Inland Empire.</p>
+      <a class="usend" href="tel:+19512585030"><span class="usend-wrap" style="display:flex;align-items:center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill="none" d="M0 0h24v24H0z"/><path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"/></svg></span><span>951-258-5030</span></a>
+    </div>
+    <div class="c-card rv d1">
+      <h3>Online Message</h3>
+      <p>For non-urgent requests and estimate scheduling. Free estimates, flat upfront pricing — we reply quickly.</p>
+      <a class="uroll" href="mailto:info@accuserve-plumbing.example"><span class="t1">Send Message</span><span class="t2">We Reply Fast →</span></a>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap foot">
+  <div>AccuServe, Inc. · C-36 Licensed Plumbing Contractor #996814 · Since 1997<br><span style="opacity:.7">Concept redesign v2 — built with open-source uiverse.io elements.</span></div>
+  <div>Serving Eastvale, Corona and the Inland Empire, 7 days a week.</div>
+</div></footer>
+
+<div class="sticky-call"><a href="tel:+19512585030">📞 951-258-5030</a></div>
+
+<script>
+// preloader
+window.addEventListener('load',()=>setTimeout(()=>document.getElementById('preloader').classList.add('done'),900));
+setTimeout(()=>document.getElementById('preloader').classList.add('done'),4000);
+// nav scroll
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40),{passive:true});
+// marquee duplicate for seamless loop
+const mq=document.getElementById('marquee');mq.innerHTML+=mq.innerHTML;
+// reveal on scroll
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+// faq accordion
+document.querySelectorAll('.faq-item').forEach(it=>{
+  const q=it.querySelector('.faq-q'),a=it.querySelector('.faq-a');
+  q.addEventListener('click',()=>{
+    const open=it.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(o=>{o.classList.remove('open');o.querySelector('.faq-a').style.maxHeight=null});
+    if(!open){it.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}
+  });
+});
+</script>
+</body>
+</html>
